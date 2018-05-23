@@ -1,0 +1,18 @@
+# Drupal
+/web/*.*
+/web/core
+/web/libraries
+/web/modules/contrib
+/web/themes/contrib
+/web/profiles/contrib
+/web/sites
+
+# Drush
+/drush/contrib
+
+# Project dependencies
+/node_modules
+/vendor
+
+# Project test results
+/tests/**/results
