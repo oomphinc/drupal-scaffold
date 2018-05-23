@@ -1,0 +1,38 @@
+name: drupal-scaffold
+recipe: drupal8
+
+config:
+  database: mariadb:10.1
+  php: "7.1"
+  webroot: web
+  xdebug: true
+
+events:
+  # Clear cache after a database import
+  post-db-import:
+    - appserver: cd $LANDO_WEBROOT && drush cache-rebuild --yes
+
+services:
+  appserver:
+    run:
+      - cd $LANDO_MOUNT && composer install
+
+  nodejs:
+    type: node:8.9
+    globals:
+      gulp-cli: latest
+    run:
+      - cd $LANDO_MOUNT && npm install
+
+  phpmyadmin:
+    type: phpmyadmin
+
+tooling:
+  gulp:
+    service: nodejs
+
+  node:
+    service: nodejs
+
+  npm:
+    service: nodejs
