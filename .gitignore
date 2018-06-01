@@ -5,10 +5,23 @@
 /web/modules/contrib
 /web/themes/contrib
 /web/profiles/contrib
-/web/sites
+
+/web/sites/*
+!/web/sites/default
+/web/sites/default/*
+!/web/sites/default/settings.php
+
+!/web/.rsync-filter
+
+/config/**/.htaccess
 
 # Drush
 /drush/contrib
+
+# Compiled assets
+/web/**/*.css
+/web/**/*.js
+!/web/**/*.es6.js
 
 # Project dependencies
 /node_modules
@@ -16,3 +29,6 @@
 
 # Project test results
 /tests/**/results
+
+# Lando
+/drupal8.*.gz

@@ -10,6 +10,19 @@ You will need composer to create a new project:
 $ composer create-project oomphinc/drupal-scaffold my-project.tld --no-interaction
 ```
 
+After composer installs the Drupal scaffold, you can quickly bootstrap a local
+environment by running:
+
+```bash
+$ lando start && lando drush site-install standard --account-pass=admin
+```
+
+The command above will install all project dependencies and install Drupal with
+the standard installation profile. You can then log into Drupal as User 1 with
+`admin` / `admin` as the credentials.
+
+## Lando
+
 Besides the initial dependency of composer to create this project, the only
 dependency this project has afterwards is [Lando][]. All tools used for this
 project are containerized and wrapped with [Lando][].
