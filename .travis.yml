@@ -1,6 +1,6 @@
 language: php
 
-php: 7.1
+php: 7.2
 
 service: docker
 
@@ -18,14 +18,13 @@ install:
 
 before_script:
   # Install project dependencies.
-  - lando composer install
-  - lando npm install
+  - lando start
 
 script:
   # Validate custom code.
   - lando composer validate:php
   - lando gulp validate:js
-  - lando gulp validate:scss
+  - lando gulp validate:sass
 
   # Test custom code.
   - lando composer test:php
