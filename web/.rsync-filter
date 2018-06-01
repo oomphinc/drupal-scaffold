@@ -1,0 +1,6 @@
+# Retain this file to protect files from being deleted by rsync. This file
+# should be placed in the Drupal root directory and specify relative paths from
+# the Drupal root.
+- sites/default/files
+- *.scss
+- *.es6.js
