@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
+const imagemin = require('gulp-imagemin');
 
 // Directories to search SCSS files to compile. By default, node-sass does not
 // compile files that begin with _.
@@ -19,9 +20,14 @@ const javascriptFilePaths = [
   "web/themes/custom/**/*.es6.js",
 ];
 
+// Directories to search image files to compress.
+const imageFilePaths = [
+  "web/themes/custom/**/img/*"
+];
+
 // Build tasks.
 gulp
-  .task('build', ['build:js', 'build:sass'])
+  .task('build', ['build:js', 'build:sass', 'optimize'])
   .task('build:js', () => {
     return gulp
       .src(javascriptFilePaths)
@@ -99,6 +105,27 @@ gulp
     return gulp
       .src(scssFilePaths)
       .pipe(stylelint({fix: true}))
+      .pipe(gulp.dest((file) => {
+        return file.base;
+      }));
+  });
+
+gulp
+  .task('optimize', () => {
+    return gulp
+      .src(imageFilePaths)
+      .pipe(imagemin([
+        imagemin.gifsicle({interlaced: true}),
+        imagemin.jpegtran({progressive: true}),
+        imagemin.optipng({optimizationLevel: 5}),
+        imagemin.svgo({
+          plugins: [
+            {removeViewBox: true}
+          ]
+        }),
+      ], {
+        verbose: true
+      }))
       .pipe(gulp.dest((file) => {
         return file.base;
       }));
