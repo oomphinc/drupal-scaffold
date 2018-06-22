@@ -18,6 +18,7 @@ this project has the following commands:
 * `lando gulp watch[:js|sass]`
 * `lando gulp validate[:js|sass]`
 * `lando gulp fix[:js|sass]`
+* `lando gulp optimize`
 
 ## Build command
 
@@ -76,5 +77,10 @@ or JavaScript (`validate:js`) specifically.
 The `fix` command runs the syntax fixers provided by the code linters used for
 validating SCSS and JavaScript (ES6). The command will try its _best_ to fix
 coding standard violations based on specific rulesets for each language.
+
+## Optimize command
+The `optimize` command will run through the theme images directory
+`web/themes/custom/**/img/*` and reduce file size for all `.gif` `.jpeg` `.png`
+and `.svg` image formats.
 
 [Gulp]: https://gulpjs.com/
