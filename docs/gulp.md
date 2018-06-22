@@ -77,4 +77,12 @@ The `fix` command runs the syntax fixers provided by the code linters used for
 validating SCSS and JavaScript (ES6). The command will try its _best_ to fix
 coding standard violations based on specific rulesets for each language.
 
+# Gulp Addons
+
+## Autoprefixer
+[Autoprefixer][] is a tool that parses our files and adds vendor prefixes if
+necessary. It derives which prefixes are needed from the `.browserslistrc` file
+in the root of the repository.
+
 [Gulp]: https://gulpjs.com/
+[Autoprefixer]: https://github.com/postcss/autoprefixer
