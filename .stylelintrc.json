@@ -1,7 +1,4 @@
 {
-  "plugins": [
-    "stylelint-no-unsupported-browser-features"
-  ],
   "extends": [
     "stylelint-config-sass-guidelines"
   ],
@@ -9,9 +6,6 @@
     "max-nesting-depth": 4,
     "selector-no-qualifying-type": null,
     "selector-max-compound-selectors": 4,
-    "order/properties-alphabetical-order": null,
-    "plugin/no-unsupported-browser-features": [true, {
-      "severity": "warning"
-    }]
+    "order/properties-alphabetical-order": null
   }
 }

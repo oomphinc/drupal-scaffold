@@ -59,11 +59,7 @@ To validate SASS files use `lando gulp validate:sass`.
 **Rule** `order/properties-alphabetical-order`
 * Alphabetical order of properties is not enforced.
 
-**Rule** `no-unsupported-browser-features`
-* This is a plugin used in conjunction with `.browserslistrc` to provide a
-Warning if their are any conflicts with your code and browser support.
-
-To temporarily disable the linter for certain blocks you can use the syntax
+To temporarily disable the linter for certain code blocks you can use the syntax
 below. More information can be found in the linter[docs][].
 
 `
