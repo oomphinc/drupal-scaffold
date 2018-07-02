@@ -1,5 +1,5 @@
 <!-- Please use a meaningful pull request title -->
-<!-- Please apply meaningful tags to your pull request such as: PHP, Twig, SCSS, JS, etc. -->
+<!-- Please apply meaningful GitHub Labels to your pull request such as: PHP, Twig, SCSS, JS, etc. -->
 ## Summary
 <!-- Include a summary of your changes that expands upon the title -->
 
