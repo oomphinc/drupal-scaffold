@@ -4,6 +4,7 @@ const gulp = require('gulp');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
+const sassGlob = require('gulp-sass-glob');
 
 // Directories to search SCSS files to compile. By default, node-sass does not
 // compile files that begin with _.
@@ -38,6 +39,7 @@ gulp
   .task('build:sass', () => {
     return gulp
       .src(scssFilePaths)
+      .pipe(sassGlob())
       .pipe(sass({
         includePaths: [
           "node_modules",
