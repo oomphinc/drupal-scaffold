@@ -21,6 +21,7 @@
     "gulp-eslint": "^4.0.2",
     "gulp-rename": "^1.2.3",
     "gulp-sass": "^4.0.1",
+    "gulp-sass-glob": "^1.0.9",
     "gulp-stylelint": "^7.0.0",
     "node-sass": "^4.9.0",
     "stylelint": "^9.2.1",
