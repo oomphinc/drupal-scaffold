@@ -6,26 +6,29 @@
     "type": "git",
     "url": "git+https://github.com/oomphinc/drupal-scaffold.git"
   },
-  "author": "Nathan Dentzau <nathan.dentzau@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-import": "^2.12.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.11.1",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
     "gulp-babel": "^7.0.1",
     "gulp-eslint": "^4.0.2",
     "gulp-rename": "^1.2.3",
     "gulp-sass": "^4.0.1",
     "gulp-sass-glob": "^1.0.9",
     "gulp-stylelint": "^7.0.0",
-    "node-sass": "^4.9.0",
-    "stylelint": "^9.2.1",
+    "node-sass": "^4.9.3",
+    "prettier": "^1.14.2",
+    "stylelint": "^9.4.0",
     "stylelint-config-sass-guidelines": "^5.0.0",
-    "stylelint-scss": "^3.1.0"
+    "stylelint-scss": "^3.3.0"
   }
 }

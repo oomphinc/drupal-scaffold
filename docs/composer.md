@@ -59,33 +59,24 @@ paths are defined as follows:
 }
 ```
 
-## Custom scripts
+## Drupal Scaffold
 
-Custom scripts are included with the scaffold to proxy php utilities located in
-the Composer vendor directory.
+This project has a dependency of `drupal-composer/drupal-scaffold`. Every time
+`composer install` or `composer update` is run, the scaffold plugin will
+download the skeleton files for Drupal. If you need to add changes to any of the
+skeleton files that are downloaded with the scaffold plugin, you will need to
+add a directive to the composer `extra` array:
 
-### PHPCS
-
-A PHP code linter is available with [PHPCS][] and uses the Drupal coding
-standards. A custom script has been added to the `composer.json` file to run
-[PHPCS][]:
-
-```bash
-$ lando composer validate:php
-```
-
-### PHPUnit
-
-It is **strongly** recommended to unit test all custom PHP code. This project
-has been configured with [PHPUnit][]. Unit tests must be located in
-`my_module/tests/src/Unit/*` for PHPUnit to run tests. Your unit tests must
-extend the `UnitTestCase` class provided by Drupal. A custom script has been
-added to the `composer.json` file to run PHPUnit:
-
-```bash
-$ lando composer test:php
+```json
+{
+    "extra": {
+        "drupal-scaffold": {
+            "excludes": [
+                ".htaccess"
+            ]
+        }
+    }
+}
 ```
 
 [Composer]: https://getcomposer.org
-[PHPCS]: https://github.com/squizlabs/PHP_CodeSniffer
-[PHPUnit]: https://phpunit.de

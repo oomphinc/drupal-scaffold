@@ -22,12 +22,11 @@ before_script:
 
 script:
   # Validate custom code.
-  - lando composer validate:php
-  - lando gulp validate:js
-  - lando gulp validate:sass
+  - lando phpcs
+  - lando gulp validate
 
   # Test custom code.
-  - lando composer test:php
+  - lando phpunit
 
 before_deploy:
   # Optimize the Composer autoloader before deployment.
