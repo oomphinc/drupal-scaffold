@@ -18,11 +18,12 @@ services:
       - cd $LANDO_MOUNT && composer install
 
   nodejs:
-    type: node:8.9
+    type: node:9
     globals:
       gulp-cli: latest
     run:
       - cd $LANDO_MOUNT && npm install
+      - cd $LANDO_MOUNT && gulp build
 
   phpmyadmin:
     type: phpmyadmin
@@ -30,9 +31,13 @@ services:
 tooling:
   gulp:
     service: nodejs
-
   node:
     service: nodejs
-
   npm:
     service: nodejs
+  phpunit:
+    service: appserver
+    cmd: vendor/bin/phpunit
+  phpcs:
+    service: appserver
+    cmd: vendor/bin/phpcs
