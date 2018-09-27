@@ -22,6 +22,7 @@
 /web/**/*.css
 /web/**/*.js
 !/web/**/*.es6.js
+/web/**/*.map
 
 # Project dependencies
 /node_modules
