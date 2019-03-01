@@ -20,6 +20,9 @@ const javascriptFilePaths = [
   "web/themes/custom/**/*.es6.js",
 ];
 
+// Default task.
+gulp.task('default', ['build']);
+
 // Build tasks.
 gulp
   .task('build', ['build:js', 'build:sass'])
