@@ -4,7 +4,7 @@ recipe: drupal8
 config:
   php: "7.2"
   webroot: web
-  xdebug: true
+  xdebug: false
 
 events:
   # Clear cache after a database import
