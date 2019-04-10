@@ -7,7 +7,7 @@ Drupal 8 scaffold project to kick start development of a new instance of Drupal.
 You will need composer to create a new project:
 
 ```bash
-$ composer create-project oomphinc/drupal-scaffold my-project.tld --no-interaction
+$ composer create-project --no-interaction oomphinc/drupal-scaffold my-project.tld 
 ```
 
 After composer installs the Drupal scaffold, you can quickly bootstrap a local
