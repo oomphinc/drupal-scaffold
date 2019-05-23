@@ -1,0 +1,5 @@
+# Retain this file to protect files from being deleted or copied by rsync.
+- web/sites/default/files
+- *.scss
+- *.es6.js
+- .git
