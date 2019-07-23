@@ -60,15 +60,15 @@ To validate SASS files use `lando gulp validate:sass`.
 * Alphabetical order of properties is not enforced.
 
 To temporarily disable the linter for certain code blocks you can use the syntax
-below. More information can be found in the linter[docs][].
+below. More information can be found in the linter [docs][].
 
-`
+```
 /* stylelint-disable selector-no-id, declaration-no-important  */
 #id {
   color: pink !important;
 }
 /* stylelint-enable */
-`
+```
 
 [Drupal]: https://drupal.org
 [Drupal coding standards for JavaScript]: https://www.drupal.org/docs/develop/standards/javascript/javascript-coding-standards
