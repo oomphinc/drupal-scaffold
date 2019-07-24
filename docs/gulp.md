@@ -43,6 +43,9 @@ The file:
 Compiles to:
 `/web/themes/custom/my_theme/assets/styles/main.css`
 
+**Note:** Additional add-ons such as Autoprefixer produce extended functionality
+and may run during the `build` step. See the Gulp Addons section.
+
 ### JavaScript compilation
 
 The `build:js` command will compile files with the extension `.es6.js` to `.js`

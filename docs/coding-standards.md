@@ -48,7 +48,8 @@ To validate SASS files use `lando gulp validate:sass`.
 * Alphabetical order of properties is not enforced (order/properties-alphabetical-order)
 
 **Rule:** `max-nesting-depth`
-* Recommend setting is `1` but then, what is the point of SASS
+* SASS Guidelines recommended setting is `1` but then, what is the point of SASS
+* we override this setting to 4.
 
 **Rule:** `selector-no-qualifying-type`
 * Qualifying a selector by type is allowed.
@@ -68,6 +69,13 @@ below. More information can be found in the linter [docs][].
   color: pink !important;
 }
 /* stylelint-enable */
+```
+
+To disable a single property.
+```
+.class {
+  -webkit-appearance: none; // stylelint-disable-line property-no-vendor-prefix
+}
 ```
 
 [Drupal]: https://drupal.org
