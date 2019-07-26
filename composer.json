@@ -36,6 +36,7 @@
         "drupal/oomph_paragraphs": "^1.0",
         "drupal/recreate_block_content": "^2.0",
         "drupal/seckit": "^1.0",
+        "drupal/view_unpublished": "1.x-dev",
         "drush/drush": "^9.2",
         "oomphinc/composer-installers-extender": "^1.1",
         "zaporylie/composer-drupal-optimizations": "^1.0"
