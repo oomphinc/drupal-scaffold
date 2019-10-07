@@ -5,6 +5,11 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Oomph, Inc.",
+            "email": "devops@oomphinc.com",
+            "homepage": "https://www.oomphinc.com/"
+        },
+        {
             "name": "Nathan Dentzau",
             "email": "nathan.dentzau@gmail.com"
         }
