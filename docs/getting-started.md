@@ -134,6 +134,7 @@ Commands:
   poweroff                 Spin down all lando related containers
   rebuild [appname]        Rebuilds app in current directory or [appname]
   restart [appname]        Restarts app in current directory or [appname]
+  security-check           Runs security-check commands
   share [appname]          Get a publicly available url
   ssh [appname] [service]  SSH into [service] in current app directory or [appname]
   start [appname]          Start app in current directory or [appname]
