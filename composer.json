@@ -44,7 +44,7 @@
         "drupal/view_unpublished": "1.x-dev",
         "drush/drush": "^9.2",
         "oomphinc/composer-installers-extender": "^1.1",
-        "symfony/debug": "3.3.*",
+        "symfony/debug": "^3.3.3",
         "symfony/filesystem": "^3.4",
         "symfony/finder": "^3.4",
         "zaporylie/composer-drupal-optimizations": "^1.0"
