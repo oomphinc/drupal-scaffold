@@ -10,7 +10,6 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ## [Unreleased]
 ### Added
-[Issue #45](https://github.com/oomphinc/drupal-scaffold/issues/45): Add Drupal Console Support.
 
 ### Changed
 
@@ -21,6 +20,15 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Fixed
 
 ### Security
+
+## [1.0.4] - 2020-02-04
+### Added
+[Issue #45](https://github.com/oomphinc/drupal-scaffold/issues/45): Add Drupal Console Support.
+[Issue #48](https://github.com/oomphinc/drupal-scaffold/pull/48): Add security check for composer packages
+- Updates and improvements to documentation.
+- Views Unpublished module added.
+- Adds autoprefixer to gulp build process.
+- Removes browserlist feature from gulp build process.
 
 ## [1.0.3] - 2019-05-04
 ### Added
@@ -49,7 +57,8 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ## [1.0.0] - 2018-06-01
 Initial tagged release
 
-[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.3...HEAD
+[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.4...HEAD
+[1.0.3]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.0...1.0.1
