@@ -47,6 +47,7 @@
         "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
+        "drupal/console": "^1.9",
         "phpunit/phpunit": "^6.5",
         "sensiolabs/security-checker": "^6.0",
         "symfony/phpunit-bridge": "^4.0"
