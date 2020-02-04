@@ -140,7 +140,6 @@ Finally, push it up to GitHub:
 git push --follow-tags
 ```
 
-[Oomph Handbook]: http://handbook.oomphcloud.com/version-control.html#branching-strategy
 [Keep a Changelog]: http://keepachangelog.com/
 [git-commit-messages]: https://chris.beams.io/posts/git-commit/
 [Semantic Versioning]: http://semver.org/
