@@ -1,7 +1,7 @@
 ## Release workflow
 
 ### Versioning scheme
-The American Veterinary Medical Association website uses a modified [Semantic Versioning][] scheme.
+[Oomph Inc's Drupal Scaffold][] uses a modified [Semantic Versioning][] scheme.
 The only changes we make are for clarity. Since we're
 versioning a website, and not a library or piece of software, we use different
 terms to describe each part of the version string.
@@ -140,6 +140,7 @@ Finally, push it up to GitHub:
 git push --follow-tags
 ```
 
+[Oomph Inc's Drupal Scaffold]: https://github.com/oomphinc/drupal-scaffold.git
 [Keep a Changelog]: http://keepachangelog.com/
 [git-commit-messages]: https://chris.beams.io/posts/git-commit/
 [Semantic Versioning]: http://semver.org/
