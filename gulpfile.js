@@ -6,6 +6,7 @@ const sass = require('gulp-sass');
 const stylelint = require('gulp-stylelint');
 const sassGlob = require('gulp-sass-glob');
 const autoprefixer = require('gulp-autoprefixer');
+const fileArgs = require('yargs').argv;
 
 // Directories to search SCSS files to compile. By default, node-sass does not
 // compile files that begin with _.
@@ -74,7 +75,7 @@ gulp
   .task('validate', ['validate:js', 'validate:sass'])
   .task('validate:sass', () => {
     return gulp
-      .src(scssFilePaths)
+      .src(fileArgs.file? fileArgs.file : scssFilePaths)
       .pipe(stylelint({
         reporters: [
           {
@@ -87,7 +88,7 @@ gulp
   })
   .task('validate:js', () => {
     return gulp
-      .src(javascriptFilePaths)
+      .src(fileArgs.file? fileArgs.file : javascriptFilePaths)
       .pipe(eslint())
       .pipe(eslint.format())
       .pipe(eslint.failAfterError());
@@ -98,7 +99,7 @@ gulp
   .task('fix', ['fix:js', 'fix:sass'])
   .task('fix:js', () => {
     return gulp
-      .src(javascriptFilePaths)
+      .src(fileArgs.file? fileArgs.file : javascriptFilePaths)
       .pipe(eslint({fix: true}))
       .pipe(gulp.dest((file) => {
         return file.base;
@@ -106,7 +107,7 @@ gulp
   })
   .task('fix:sass', () => {
     return gulp
-      .src(scssFilePaths)
+      .src(fileArgs.file? fileArgs.file : scssFilePaths)
       .pipe(stylelint({fix: true}))
       .pipe(gulp.dest((file) => {
         return file.base;
