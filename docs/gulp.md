@@ -19,11 +19,9 @@ this project has the following commands:
 * `lando gulp validate[:js|sass]`
 * `lando gulp fix[:js|sass]`
 
-Validate and fix can be passed file arguments to run against a single file:
+Validate/fix can take file arguments with [Yargs][] to run against a single file:
 * `lando gulp validate[:js|sass] --file=[file path]`
 * `lando gulp fix[:js|sass] --file=[file path]`
-
-See [Yargs][]
 
 ## Build command
 
