@@ -19,6 +19,10 @@ this project has the following commands:
 * `lando gulp validate[:js|sass]`
 * `lando gulp fix[:js|sass]`
 
+Validate/fix can take file arguments with [Yargs][] to run against a single file:
+* `lando gulp validate[:js|sass] --file=[file path]`
+* `lando gulp fix[:js|sass] --file=[file path]`
+
 ## Build command
 
 The `build` command compiles all SCSS and JavaScript (ES6) files in the project.
@@ -88,3 +92,4 @@ coding standard violations based on specific rulesets for each language.
 [Gulp]: https://gulpjs.com/
 [Autoprefixer]: https://github.com/postcss/autoprefixer
 [Can I Use]: https://caniuse.com/
+[Yargs]: http://yargs.js.org/
