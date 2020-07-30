@@ -1,0 +1,14 @@
+global-styling:
+  version: VERSION
+  js:
+    js/global.js: {}
+  css:
+    component:
+      css/main.css: {}
+bootstrap_cdn:
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
+    //stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js: {}
+  css:
+    component:
+      //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}

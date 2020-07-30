@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Contains next_stop.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function next_stop_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the next_stop module.
+    case 'help.page.next_stop':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom pages and module for the Next Stop API consumption') . '</p>';
+      return $output;
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function next_stop_theme($existing, $type, $theme, $path) {
+  return [		
+    //Name of the theme hook. This is used in the controller to trigger the hook.
+    'all_routes' => [
+      'render element' => 'children',
+      'template' => 'all-routes',
+      'variables' => [
+        'routes' => [],
+      ],
+    ],
+    'selected_route' => [
+      'render element' => 'children',
+      'template' => 'selected-route',
+      'variables' => [
+        'stops' => [],
+        'schedule' => '',
+      ],
+    ],
+  ];
+
+}

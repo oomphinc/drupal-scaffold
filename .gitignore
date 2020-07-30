@@ -1,17 +1,16 @@
 # Drupal
-/web/*.*
-/web/core
-/web/libraries
-/web/modules/contrib
-/web/themes/contrib
-/web/profiles/contrib
+/docroot/core
+/docroot/libraries
+/docroot/modules/contrib
+/docroot/themes/contrib
+/docroot/profiles/contrib
 
-/web/sites/*
-!/web/sites/default
-/web/sites/default/*
-!/web/sites/default/settings.php
+/docroot/sites/*
+!/docroot/sites/default
+/docroot/sites/default/*
+!/docroot/sites/default/settings.php
 
-!/web/.rsync-filter
+!/docroot/.rsync-filter
 
 /config/**/.htaccess
 
@@ -19,10 +18,10 @@
 /drush/contrib
 
 # Compiled assets
-/web/**/*.css
-/web/**/*.js
-!/web/**/*.es6.js
-/web/**/*.map
+/docroot/**/*.css
+/docroot/**/*.js
+!/docroot/**/*.es6.js
+/docroot/**/*.map
 
 # Project dependencies
 /node_modules

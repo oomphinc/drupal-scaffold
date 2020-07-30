@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains gen_mod_test.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function gen_mod_test_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the gen_mod_test module.
+    case 'help.page.gen_mod_test':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Drupal Console generated module test with all the trimmings') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function gen_mod_test_theme() {
+  return [
+    'gen_mod_test' => [
+      'render element' => 'children',
+    ],
+  ];
+}

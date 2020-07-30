@@ -1,0 +1,35 @@
+$colors: (
+  red: #DA291C,
+  orange: #ED8B00,
+  royal: #003DA5,
+  green: #00843D,
+  gray: #7C878E,
+  school-bus: #FFC72C,
+  purple: #80276C,
+  ferry: #008EAA,
+);
+
+
+@function color($name: red, $scheme: $colors) {
+  @if map-has-key($scheme, $name) {
+    @return map-get($scheme, $name);
+  }
+  @return $color-undefined;
+}
+
+@each $name, $color in $colors {
+    .bg--#{$name} {
+        background-color: $color;
+        @if $name == school-bus { 
+            color: #000;
+            a {
+              color: #000; 
+            } 
+        } @else {
+            a {
+              color: #FFF;
+            }
+            color: #FFF;
+        }
+    }
+}

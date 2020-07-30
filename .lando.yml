@@ -1,8 +1,8 @@
 name: drupal-scaffold
-recipe: drupal8
+recipe: drupal9
 
 config:
-  php: "7.2"
+  php: "7.3"
   webroot: web
   xdebug: false
 

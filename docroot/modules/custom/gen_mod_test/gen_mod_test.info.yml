@@ -1,0 +1,5 @@
+name: 'gen_mod_test'
+type: module
+description: 'Drupal Console generated module test with all the trimmings'
+core: 8.x
+package: 'Console Examples'

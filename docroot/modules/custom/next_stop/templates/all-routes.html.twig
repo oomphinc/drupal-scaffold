@@ -1,0 +1,41 @@
+{% macro colorFinder(color) %}
+  {% spaceless %}
+    {% set colors = {
+      '#75b646': 'il-green',
+      '#DA291C': 'red',
+      '#ED8B00': 'orange',
+      '#003DA5': 'royal',
+      '#00843D': 'green',
+      '#7C878E': 'gray',
+      '#FFC72C': 'school-bus',
+      '#80276C': 'purple',
+      '#008EAA': 'ferry',
+    } %}
+    {{- 'bg--' ~ colors[color] -}}
+  {% endspaceless %}
+{% endmacro %}
+
+{% for route_group in routes %}
+  <div class="table-container">
+    <div class="flex-row header">
+      <div class="flex-cell">Link</div>
+      <div class="flex-cell">Long Name</div>
+      <div class="flex-cell">Short Name</div>
+      <div class="flex-cell">Destinations</div>
+      <div class="flex-cell">Description</div>
+    </div>
+    {% for route in route_group %}
+      <div class="flex-row {{- _self.colorFinder('#' ~ route['attributes']['color']) -}}">
+          <div class="flex-cell first"><a href="/routes/{{- route['id'] -}}/schedule">View Schedule</a></div>
+          <div class="flex-cell"><span class="mobile-label">Long Name:</span>{{- route['attributes']['long_name'] -}}</div>
+          <div class="flex-cell"><span class="mobile-label">Short Name:</span>{{- route['attributes']['short_name'] -}}</div>
+          <div class="flex-cell"><span class="mobile-label">Destinations:<br></span>
+              {% for d in route['attributes']['direction_destinations'] %}
+                  {{- d -}}<br>
+              {% endfor %}
+          </div>
+          <div class="flex-cell last"><span class="mobile-label">Description:</span>{{- route['attributes']['description'] -}}</div>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
