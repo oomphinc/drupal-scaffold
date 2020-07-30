@@ -3,9 +3,9 @@
   <description>Drupal coding standards</description>
 
   <!-- Directories to scan -->
-  <file>web/modules/custom</file>
-  <file>web/profiles/custom</file>
-  <file>web/themes/custom</file>
+  <file>docroot/modules/custom</file>
+  <file>docroot/profiles/custom</file>
+  <file>docroot/themes/custom</file>
 
   <!-- Excluded patterns -->
   <exclude-pattern>*.css</exclude-pattern>

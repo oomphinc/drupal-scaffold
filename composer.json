@@ -55,6 +55,12 @@
         ],
         "post-update-cmd": [
             "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        ],
+        "test:php": [
+            "vendor/bin/phpunit"
+        ],
+        "validate:php": [
+            "vendor/bin/phpcs"
         ]
     },
     "extra": {
@@ -73,6 +79,10 @@
         },
         "patches": {},
         "preserve-paths": [],
-        "drupal-scaffold": {}
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "docroot"
+            }
+        }
     }
 }
