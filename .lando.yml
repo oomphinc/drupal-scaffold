@@ -3,8 +3,9 @@ recipe: drupal9
 
 config:
   php: "7.3"
-  webroot: web
+  webroot: docroot
   xdebug: false
+  database: mariadb:10.3
 
 events:
   # Clear cache after a database import

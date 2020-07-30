@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true"
-  bootstrap="web/core/tests/bootstrap.php"
+  bootstrap="docroot/core/tests/bootstrap.php"
   beStrictAboutTestsThatDoNotTestAnything="true"
   beStrictAboutOutputDuringTests="true"
   beStrictAboutChangesToGlobalState="true">
@@ -16,13 +16,13 @@
     <!-- Example BROWSERTEST_OUTPUT_DIRECTORY value: /path/to/webroot/sites/simpletest/browser_output -->
     <env name="BROWSERTEST_OUTPUT_DIRECTORY" value=""/>
     <!-- To disable deprecation testing uncomment the next line. -->
-    <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak_vendors"/>
+    <!-- <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak_vendors"/> -->
     <!-- Example for changing the driver args to mink tests MINK_DRIVER_ARGS value: '["http://127.0.0.1:8510"]' -->
     <!-- Example for changing the driver args to phantomjs tests MINK_DRIVER_ARGS_PHANTOMJS value: '["http://127.0.0.1:8510"]' -->
   </php>
   <testsuites>
     <testsuite name="unit">
-      <directory>./web/modules/custom/*/tests/src/Unit</directory>
+      <directory>./docroot/modules/custom/*/tests/src/Unit</directory>
     </testsuite>
   </testsuites>
   <listeners>
@@ -35,9 +35,9 @@
   <!-- Filter for coverage reports. -->
   <filter>
     <whitelist>
-      <directory>./web/modules/custom</directory>
+      <directory>./docroot/modules/custom</directory>
       <exclude>
-        <directory>./web/modules/custom/*/tests</directory>
+        <directory>./docroot/modules/custom/*/tests</directory>
       </exclude>
      </whitelist>
   </filter>

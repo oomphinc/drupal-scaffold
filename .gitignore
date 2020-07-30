@@ -29,6 +29,7 @@
 
 # Project test results
 /tests/**/results
+.phpunit.result.cache
 
 # Lando
 /drupal8.*.gz
