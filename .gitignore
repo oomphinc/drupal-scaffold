@@ -1,4 +1,5 @@
 # Drupal
+/docroot/*.*
 !/docroot/.htaccess
 /docroot/core
 /docroot/libraries
