@@ -1,11 +1,12 @@
 # Drupal
+/docroot/*.*
+!/docroot/.htaccess
 /docroot/core
 /docroot/libraries
 /docroot/modules/contrib
 /docroot/themes/contrib
 /docroot/profiles/contrib
 
-/docroot/sites/*
 !/docroot/sites/default
 /docroot/sites/default/*
 !/docroot/sites/default/settings.php
