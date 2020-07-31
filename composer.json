@@ -77,11 +77,7 @@
             "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
-        "patches": {
-            "drupal/core": {
-                "Using @requires extension_name in PHPUnit unit tests fails if extension is not present" : "https://www.drupal.org/project/drupal/issues/3156998#comment-13751290"
-            }
-        },
+        "patches": {},
         "preserve-paths": [],
         "drupal-scaffold": {
             "locations": {
