@@ -21,7 +21,7 @@ following languages:
 ## JavaScript (ES6)
 
 The validator for custom JavaScript is [ESLint][]. This project uses the
-`/web/core/.eslintrc.json` file to validated custom JavaScript. The [ESLint][]
+`/docroot/core/.eslintrc.json` file to validated custom JavaScript. The [ESLint][]
 file provided by [Drupal][] core follows the
 [Drupal coding standards for JavaScript][].
 

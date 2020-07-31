@@ -28,8 +28,8 @@ Validate/fix can take file arguments with [Yargs][] to run against a single file
 The `build` command compiles all SCSS and JavaScript (ES6) files in the project.
 The compiler recursively searches the following directories to compile files:
 
-* `/web/modules/custom`
-* `/web/themes/custom`
+* `/docroot/modules/custom`
+* `/docroot/themes/custom`
 
 **Note:** Files with the extensions `.css` and `.js` will be ignored by git.
 Compiled assets should not exist in version control.
@@ -42,10 +42,10 @@ The `build:sass` command will compile files with the extension `.scss` that do
 #### Example
 
 The file:
-`/web/themes/custom/my_theme/assets/styles/main.scss`
+`/docroot/themes/custom/my_theme/assets/styles/main.scss`
 
 Compiles to:
-`/web/themes/custom/my_theme/assets/styles/main.css`
+`/docroot/themes/custom/my_theme/assets/styles/main.css`
 
 **Note:** Additional add-ons such as Autoprefixer produce extended functionality
 and may run during the `build` step. See the Gulp Addons section.
@@ -58,10 +58,10 @@ files in the same directory.
 #### Example
 
 The file:
-`/web/modules/custom/my_module/assets/scripts/my_module.es6.js`
+`/docroot/modules/custom/my_module/assets/scripts/my_module.es6.js`
 
 Compiles to:
-`/web/modules/custom/my_module/assets/scripts/my_module.js`
+`/docroot/modules/custom/my_module/assets/scripts/my_module.js`
 
 ## Watch command
 
