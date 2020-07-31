@@ -7,6 +7,7 @@
 /docroot/themes/contrib
 /docroot/profiles/contrib
 
+/docroot/sites/*
 !/docroot/sites/default
 /docroot/sites/default/*
 !/docroot/sites/default/settings.php
@@ -35,17 +36,3 @@
 # Lando
 /drupal8.*.gz
 /.lando.local.yml
-/.csslintrc
-/.eslintignore
-/.eslintrc.json
-/.gitattributes
-/.ht.router.php
-/.htaccess
-/INSTALL.txt
-/README.txt
-/autoload.php
-/example.gitignore
-/index.php
-/robots.txt
-/update.php
-/web.config
