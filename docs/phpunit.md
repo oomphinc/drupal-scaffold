@@ -17,15 +17,15 @@ $ lando phpunit
 
 PHPUnit is configured to look for tests in the following locations:
 
-* `docroot/modules/custom/*/tests/src/Unit`
+* `web/modules/custom/*/tests/src/Unit`
 
 Test classes must be suffixed with `Test.php`, e.g. `RouteSubscriberTest.php`.
 
 ### Modules
 If you are writing tests for
-`docroot/modules/custom/my_module/src/Routing/RouteSubscriber.php`, you would create
+`web/modules/custom/my_module/src/Routing/RouteSubscriber.php`, you would create
 the following test file:
-`docroot/modules/custom/my_module/tests/src/Unit/Routing/RouteSubscriberTest.php`.
+`web/modules/custom/my_module/tests/src/Unit/Routing/RouteSubscriberTest.php`.
 
 ## Test Groups
 All unit tests should tag the actual test class with the `MyProject` group

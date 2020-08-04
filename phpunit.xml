@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true"
-  bootstrap="docroot/core/tests/bootstrap.php"
+  bootstrap="web/core/tests/bootstrap.php"
   beStrictAboutTestsThatDoNotTestAnything="true"
   beStrictAboutOutputDuringTests="true"
   beStrictAboutChangesToGlobalState="true">
@@ -22,7 +22,7 @@
   </php>
   <testsuites>
     <testsuite name="unit">
-      <directory>./docroot/modules/custom/*/tests/src/Unit</directory>
+      <directory>./web/modules/custom/*/tests/src/Unit</directory>
     </testsuite>
   </testsuites>
   <listeners>
@@ -35,9 +35,9 @@
   <!-- Filter for coverage reports. -->
   <filter>
     <whitelist>
-      <directory>./docroot/modules/custom</directory>
+      <directory>./web/modules/custom</directory>
       <exclude>
-        <directory>./docroot/modules/custom/*/tests</directory>
+        <directory>./web/modules/custom/*/tests</directory>
       </exclude>
      </whitelist>
   </filter>

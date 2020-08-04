@@ -11,15 +11,15 @@ const fileArgs = require('yargs').argv;
 // Directories to search SCSS files to compile. By default, node-sass does not
 // compile files that begin with _.
 const scssFilePaths = [
-  "docroot/modules/custom/**/*.scss",
-  "docroot/themes/custom/**/*.scss",
+  "web/modules/custom/**/*.scss",
+  "web/themes/custom/**/*.scss",
 ];
 
 // Directories to search ES6 JavaScript files to compile. Files will be compiled
 // to a .js file extension.
 const javascriptFilePaths = [
-  "docroot/modules/custom/**/*.es6.js",
-  "docroot/themes/custom/**/*.es6.js",
+  "web/modules/custom/**/*.es6.js",
+  "web/themes/custom/**/*.es6.js",
 ];
 
 // Default task.
@@ -51,7 +51,7 @@ gulp
       .pipe(sass({
         includePaths: [
           "node_modules",
-          "docroot/libraries",
+          "web/libraries",
         ]
       }))
       .pipe(sass().on('error', sass.logError))

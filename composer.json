@@ -66,22 +66,22 @@
     "extra": {
         "installer-types": ["bower-asset", "npm-asset"],
         "installer-paths": {
-            "docroot/core": ["type:drupal-core"],
-            "docroot/libraries/{$name}": [
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": [
                 "type:drupal-library",
                 "type:bower-asset",
                 "type:npm-asset"
             ],
-            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
-            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {},
         "preserve-paths": [],
         "drupal-scaffold": {
             "locations": {
-                "web-root": "docroot"
+                "web-root": "web"
             }
         }
     },

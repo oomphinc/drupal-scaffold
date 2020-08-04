@@ -53,7 +53,7 @@ paths are defined as follows:
 {
     "extra": {
         "preserve-paths": [
-            "docroot/.htaccess"
+            "web/.htaccess"
         ]
     }
 }
