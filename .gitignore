@@ -33,5 +33,4 @@
 # Lando
 /drupal8.*.gz
 /.lando.local.yml
-/.editorconfig
 /.gitattributes
