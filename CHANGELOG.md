@@ -10,10 +10,8 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ## [Unreleased]
 ### Added
-- Added yargs package
 
 ### Changed
-- Changed gulp scripts and docs to reference yargs
 
 ### Deprecated
 
@@ -22,6 +20,16 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Fixed
 
 ### Security
+
+## [1.0.5] - 2020-08-13
+This is the last release with support for support with Drupal 8.
+
+### Added
+- Added yargs package
+
+### Changed
+- Changed gulp scripts and docs to reference yargs
+
 
 ## [1.0.4] - 2020-02-04
 ### Added
@@ -59,8 +67,9 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ## [1.0.0] - 2018-06-01
 Initial tagged release
 
-[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.4...HEAD
-[1.0.3]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.3...1.0.4
+[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.5...HEAD
+[1.0.5]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.4...1.0.5
+[1.0.4]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.1...1.0.2
 [1.0.1]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.0...1.0.1
