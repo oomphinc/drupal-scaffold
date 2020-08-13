@@ -10,7 +10,6 @@ This project is built on [Oomph Inc's Drupal Scaffold][]. The scaffold provides
 tools to get started with a new project:
 
 * [Lando][]: Local development
-* [Travis-CI][]: Continuous deployment
 * [npm][]: NodeJS dependency management
 * [Gulp][]: SCSS & JS compilation, validation and automatic syntax fixing
 * [Composer][]: PHP dependency management
@@ -150,7 +149,6 @@ You need at least one command before moving on
 
 [Oomph Inc's Drupal Scaffold]: https://github.com/oomphinc/drupal-scaffold.git
 [Lando]: https://docs.devwithlando.io
-[Travis-CI]: https://travis-ci.com
 [npm]: https://npmjs.com
 [Gulp]: https://gulpjs.com
 [Composer]: https://getcomposer.org

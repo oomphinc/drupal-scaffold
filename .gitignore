@@ -11,8 +11,6 @@
 /web/sites/default/*
 !/web/sites/default/settings.php
 
-!/web/.rsync-filter
-
 /config/**/.htaccess
 
 # Drush
@@ -30,7 +28,9 @@
 
 # Project test results
 /tests/**/results
+.phpunit.result.cache
 
 # Lando
 /drupal8.*.gz
 /.lando.local.yml
+/.gitattributes

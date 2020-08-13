@@ -1,6 +1,6 @@
 {
     "name": "oomphinc/drupal-scaffold",
-    "description": "A Drupal 8 scaffold project",
+    "description": "A Drupal 9 scaffold project",
     "type": "project",
     "license": "MIT",
     "authors": [
@@ -25,32 +25,24 @@
         }
     ],
     "require": {
-        "bower-asset/bootstrap": "^4.0",
-        "composer/installers": "^1.5",
+        "composer/installers": "^1.9",
+        "drupal/core-composer-scaffold": "^9",
+        "drupal/core-project-message": "^9",
+        "drupal/core-recommended": "^9",
+        "drupal/core-vendor-hardening": "^9",
         "cweagans/composer-patches": "^1.6",
-        "drupal-composer/drupal-scaffold": "^2.4",
         "drupal-composer/preserve-paths": "^0.1.4",
-        "drupal/admin_toolbar": "^1.23",
-        "drupal/coder": "^8.2",
+        "drupal/admin_toolbar": "^2.0",
+        "drupal/coder": "^8.3",
         "drupal/coffee": "^1.0",
-        "drupal/config_installer": "^1.8",
-        "drupal/config_split": "^1.3",
-        "drupal/core": "^8.6",
-        "drupal/devel": "^1.2",
-        "drupal/honeypot": "^1.27",
-        "drupal/oomph_paragraphs": "^1.0",
-        "drupal/recreate_block_content": "^2.0",
-        "drupal/seckit": "^1.0",
-        "drupal/view_unpublished": "1.x-dev",
-        "drush/drush": "^9.2",
+        "drupal/config_split": "^1.5",
+        "drupal/devel": "^4.0",
+        "drupal/honeypot": "^2.0",
+        "drupal/seckit": "^2.0",
+        "drupal/view_unpublished": "^1.0",
+        "drush/drush": "^10.0",
         "oomphinc/composer-installers-extender": "^1.1",
         "zaporylie/composer-drupal-optimizations": "^1.0"
-    },
-    "require-dev": {
-        "drupal/console": "^1.9",
-        "phpunit/phpunit": "^6.5",
-        "sensiolabs/security-checker": "^6.0",
-        "symfony/phpunit-bridge": "^4.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -63,6 +55,12 @@
         ],
         "post-update-cmd": [
             "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        ],
+        "test:php": [
+            "vendor/bin/phpunit"
+        ],
+        "validate:php": [
+            "vendor/bin/phpcs"
         ]
     },
     "extra": {
@@ -81,6 +79,14 @@
         },
         "patches": {},
         "preserve-paths": [],
-        "drupal-scaffold": {}
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web"
+            }
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8",
+        "symfony/phpunit-bridge": "^5.1"
     }
 }
