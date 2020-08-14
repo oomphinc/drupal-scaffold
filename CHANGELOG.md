@@ -18,8 +18,11 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Removed
 
 ### Fixed
+Reintroduced Sensio Labs Security Checker.
 
 ### Security
+Updated lodash to 4.17.20.
+Updated lodash.template to 4.5.0.
 
 ## [1.1.1] - 2020-09-02
 ### Removed
