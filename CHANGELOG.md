@@ -17,10 +17,8 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ### Removed
 Removed the coffee module.
-Removed the admin_toolbar module.
 Removed the honeypot module.
 Removed the view_unpublished module.
-Removed the config_split module.
 
 ### Fixed
 
