@@ -16,13 +16,16 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Deprecated
 
 ### Removed
-Removed the coffee module.
-Removed the honeypot module.
-Removed the view_unpublished module.
 
 ### Fixed
 
 ### Security
+
+## [1.1.1] - 2020-09-02
+### Removed
+Removed the coffee module.
+Removed the honeypot module.
+Removed the view_unpublished module.
 
 ## [1.1.0] - 2020-08-13
 ### Changed
