@@ -16,6 +16,9 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Deprecated
 
 ### Removed
+Removed the coffee module.
+Removed the honeypot module.
+Removed the view_unpublished module.
 
 ### Fixed
 

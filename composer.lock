@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5af57378892866752202734d0f7a0f6f",
+    "content-hash": "c8eba782893eb8cfb1a7d4539929ae94",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2015,91 +2015,24 @@
             "time": "2020-05-08T10:20:59+00:00"
         },
         {
-            "name": "drupal/coffee",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/coffee.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/coffee-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "55ae2303a5a125fb1b6a2d2c32ef41c05c905e8a"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1586890651",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "branch-alias": {
-                    "dev-8.x-1.x": "8.1.x-dev"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Mol",
-                    "homepage": "https://www.drupal.org/u/michaelmol",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Marco",
-                    "homepage": "https://www.drupal.org/u/willzyx",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Oliver Köhler",
-                    "homepage": "https://www.drupal.org/u/nebel54",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Alli Price",
-                    "homepage": "https://www.drupal.org/u/heylookalive",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "See other contributors",
-                    "homepage": "https://www.drupal.org/node/1356930/committers",
-                    "role": "contributor"
-                }
-            ],
-            "description": "Provides an Alfred like search box to navigate within your site.",
-            "homepage": "https://drupal.org/project/coffee",
-            "support": {
-                "source": "https://git.drupalcode.org/project/coffee",
-                "issues": "https://drupal.org/project/issues/coffee",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
-        },
-        {
             "name": "drupal/config_filter",
-            "version": "1.5.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_filter.git",
-                "reference": "8.x-1.5"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "81210684c378dab856b3c2bce5eeaa58992d2efc"
+                "url": "https://ftp.drupal.org/files/projects/config_filter-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "dddfc3d5be22bf6625764fa0ca1caac524cb51cc"
             },
             "require": {
-                "drupal/core": "^8 || ^9"
+                "drupal/core": "^8.8 || ^9"
+            },
+            "conflict": {
+                "drush/drush": "<10"
             },
             "suggest": {
                 "drupal/config_split": "Split site configuration for different environments."
@@ -2107,8 +2040,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1572542288",
+                    "version": "8.x-2.1",
+                    "datestamp": "1597851785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2117,7 +2050,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2145,37 +2078,41 @@
                 "configuration management"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/config_filter",
+                "source": "https://git.drupalcode.org/project/config_filter",
                 "issues": "https://www.drupal.org/project/issues/config_filter",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
+                "slack": "https://drupal.slack.com/archives/C45342CDD"
             }
         },
         {
             "name": "drupal/config_split",
-            "version": "1.5.0-rc3",
+            "version": "1.5.0-rc4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/config_split.git",
-                "reference": "8.x-1.5-rc3"
+                "reference": "8.x-1.5-rc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.5-rc3.zip",
-                "reference": "8.x-1.5-rc3",
-                "shasum": "250ff162c7c3ea66530133274114a043f804f0f5"
+                "url": "https://ftp.drupal.org/files/projects/config_split-8.x-1.5-rc4.zip",
+                "reference": "8.x-1.5-rc4",
+                "shasum": "fa1ab2863701821857f5a821a607d3abd9ca53ca"
             },
             "require": {
-                "drupal/config_filter": "*",
-                "drupal/core": "^8 || ^9"
+                "drupal/config_filter": "^1||^2",
+                "drupal/core": "^8.8 || ^9"
             },
             "conflict": {
                 "drupal/console": "<1.3.2"
             },
+            "suggest": {
+                "drupal/chosen": "Chosen uses the Chosen jQuery plugin to make the <select> elements more user-friendly.",
+                "drupal/select2_all": "Applies the Select2 library to all select fields on the site similar to the Chosen module."
+            },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.5-rc3",
-                    "datestamp": "1591798688",
+                    "version": "8.x-1.5-rc4",
+                    "datestamp": "1598364582",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -2189,7 +2126,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2217,9 +2154,9 @@
                 "configuration management"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/config_split",
+                "source": "https://git.drupalcode.org/project/config_split",
                 "issues": "https://www.drupal.org/project/issues/config_split",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
+                "slack": "https://drupal.slack.com/archives/C45342CDD"
             }
         },
         {
@@ -2809,68 +2746,6 @@
             }
         },
         {
-            "name": "drupal/honeypot",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "2.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "6f8701f5be173595318e6afe9ff744edb324f85c"
-            },
-            "require": {
-                "drupal/core": "^8.0 || ^9.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1588105107",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Jeff Geerling",
-                    "homepage": "https://www.drupal.org/user/213194",
-                    "email": "geerlingguy@mac.com"
-                },
-                {
-                    "name": "geerlingguy",
-                    "homepage": "https://www.drupal.org/user/389011"
-                },
-                {
-                    "name": "vijaycs85",
-                    "homepage": "https://www.drupal.org/user/93488"
-                }
-            ],
-            "description": "Mitigates spam form submissions using the honeypot method.",
-            "homepage": "https://www.drupal.org/project/honeypot",
-            "keywords": [
-                "deterrent",
-                "form",
-                "honeypot",
-                "honeytrap",
-                "php",
-                "spam"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/honeypot",
-                "issues": "https://www.drupal.org/project/issues/honeypot"
-            }
-        },
-        {
             "name": "drupal/seckit",
             "version": "2.0.0-rc1",
             "source": {
@@ -2929,63 +2804,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/seckit",
                 "issues": "http://drupal.org/project/issues/seckit"
-            }
-        },
-        {
-            "name": "drupal/view_unpublished",
-            "version": "1.0.0-rc3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/view_unpublished.git",
-                "reference": "8.x-1.0-rc3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/view_unpublished-8.x-1.0-rc3.zip",
-                "reference": "8.x-1.0-rc3",
-                "shasum": "6973708d48b76531fa9227d8b959a516e1cb9129"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-rc3",
-                    "datestamp": "1595646359",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Agnes Chisholm",
-                    "homepage": "https://www.drupal.org/user/66428",
-                    "email": "amaria@chisholmtech.com"
-                },
-                {
-                    "name": "beeradb",
-                    "homepage": "https://www.drupal.org/user/120651"
-                },
-                {
-                    "name": "elevins",
-                    "homepage": "https://www.drupal.org/user/781882"
-                },
-                {
-                    "name": "entendu",
-                    "homepage": "https://www.drupal.org/user/173461"
-                }
-            ],
-            "description": "Select which roles should be able to see unpublished nodes.",
-            "homepage": "https://www.drupal.org/project/view_unpublished",
-            "support": {
-                "source": "https://git.drupalcode.org/project/view_unpublished"
             }
         },
         {
@@ -7838,6 +7656,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
