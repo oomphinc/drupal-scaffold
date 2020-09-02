@@ -16,13 +16,16 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Deprecated
 
 ### Removed
-Removed the coffee module.
-Removed the honeypot module.
-Removed the view_unpublished module.
 
 ### Fixed
 
 ### Security
+
+## [1.1.1] - 2020-09-02
+### Removed
+Removed the coffee module.
+Removed the honeypot module.
+Removed the view_unpublished module.
 
 ## [1.1.0] - 2020-08-13
 ### Changed
@@ -74,7 +77,8 @@ This is the last release with support for support with Drupal 8.
 ## [1.0.0] - 2018-06-01
 Initial tagged release
 
-[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.1.1...HEAD
+[1.1.1]: https://github.com/oomphinc/drupal-scaffold/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.5...1.1.0
 [1.0.5]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/oomphinc/drupal-scaffold/compare/1.0.3...1.0.4
