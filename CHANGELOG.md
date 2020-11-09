@@ -10,6 +10,8 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ## [Unreleased]
 ### Added
+Added lando xdebug-on tooling to enable Xdebug.
+Added lando xdebug-off tooling to disable Xdebug.
 
 ### Changed
 
