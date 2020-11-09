@@ -44,3 +44,20 @@ tooling:
   security-check:
     service: appserver
     cmd: "php vendor/sensiolabs/security-checker/security-checker security:check composer.lock"
+
+  # Tooling to enable/disable Xdebug (see https://github.com/AaronFeledy/lando-examples/tree/master/xdebug )
+  xdebug-on:
+    service: appserver
+    description: Enable Xdebug.
+    user: root
+    cmd:
+      - docker-php-ext-enable xdebug && pkill -o -USR2 php-fpm || /etc/init.d/apache2 reload
+      - tput setaf 2 && echo "Xdebug On" && tput sgr 0 && echo
+
+  xdebug-off:
+    service: appserver
+    description: Disable Xdebug.
+    user: root
+    cmd:
+      - rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm || /etc/init.d/apache2 reload
+      - tput setaf 1 && echo "Xdebug Off" && tput sgr 0 && echo
