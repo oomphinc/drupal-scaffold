@@ -58,6 +58,8 @@
  * implementations with custom ones.
  */
 
+use Drupal\Core\Installer\InstallerKernel;
+
 /**
  * Database settings:
  *
@@ -88,8 +90,6 @@
  * ];
  * @endcode
  */
-
-use Drupal\Core\Installer\InstallerKernel;
 
 $databases = [];
 
