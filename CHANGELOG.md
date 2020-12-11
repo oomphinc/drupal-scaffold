@@ -14,6 +14,7 @@ Added lando xdebug-on tooling to enable Xdebug.
 Added lando xdebug-off tooling to disable Xdebug.
 
 ### Changed
+Updated memcache config in settings.php.
 
 ### Deprecated
 
