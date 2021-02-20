@@ -18,6 +18,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Removed
 
 ### Fixed
+Require Composer2-compatible versions of project dependencies.
 
 ### Security
 
