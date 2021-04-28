@@ -24,7 +24,8 @@
 
 # Project dependencies
 /node_modules
-/vendor
+/vendor/*
+!/vendor/.rsync-filter
 
 # Project test results
 /tests/**/results

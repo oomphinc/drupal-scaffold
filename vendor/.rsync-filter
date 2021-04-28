@@ -1,0 +1,2 @@
+# Retain this file to protect files from being deleted or copied by rsync.
+- .git
