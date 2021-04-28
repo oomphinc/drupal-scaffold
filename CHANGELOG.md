@@ -18,6 +18,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Removed
 
 ### Fixed
+Bump y18n from 4.0.0 to 4.0.1.
 
 ### Security
 
