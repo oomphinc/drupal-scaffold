@@ -10,6 +10,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ## [Unreleased]
 ### Added
+Add .rsync-filter files to /vendor/ and /web/ to ignore .git dirs.
 
 ### Changed
 
