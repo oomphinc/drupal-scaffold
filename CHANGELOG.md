@@ -10,6 +10,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ## [Unreleased]
 ### Added
+Add .rsync-filter files to /vendor/ and /web/ to ignore .git dirs.
 
 ### Changed
 
@@ -19,6 +20,9 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ### Fixed
 Require Composer2-compatible versions of project dependencies.
+Bump y18n from 4.0.0 to 4.0.1.
+Bump ini from 1.3.5 to 1.3.8.
+
 
 ### Security
 
