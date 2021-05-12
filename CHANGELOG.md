@@ -18,6 +18,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Removed
 
 ### Fixed
+Bumps hosted-git-info from 2.8.8 to 2.8.9.
 
 ### Security
 
