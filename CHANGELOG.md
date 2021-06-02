@@ -12,6 +12,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
+Bumps lodash from 4.17.20 to 4.17.21.
 
 ### Deprecated
 
