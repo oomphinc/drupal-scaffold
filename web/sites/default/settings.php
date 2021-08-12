@@ -781,10 +781,6 @@ if (getenv('LANDO_INFO')) {
   // Files directory paths.
   $settings['file_public_path'] = 'sites/default/files';
   $settings['file_private_path'] = 'sites/default/files/private';
-
-  // This setting is specific to Lando.
-  $config_directories[CONFIG_SYNC_DIRECTORY] = '/app/config/common';
-
   $settings['config_sync_directory'] = '/app/config/common';
   $settings['file_temp_path'] = $_ENV['TEMP'];
 

@@ -17,6 +17,7 @@ Bumps lodash from 4.17.20 to 4.17.21.
 ### Deprecated
 
 ### Removed
+Remove deprecated `$config_directories` variable.
 
 ### Fixed
 Bumps hosted-git-info from 2.8.8 to 2.8.9.
