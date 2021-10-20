@@ -14,6 +14,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Changed
 Bumps lodash from 4.17.20 to 4.17.21.
 Bump path-parse from 1.0.6 to 1.0.7.
+Update composer.lock file to match composer.json.
 
 ### Deprecated
 
