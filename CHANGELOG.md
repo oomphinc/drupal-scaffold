@@ -12,19 +12,26 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [1.2.1] - 2021-10-22
+### Changed
 Bumps lodash from 4.17.20 to 4.17.21.
 Bump path-parse from 1.0.6 to 1.0.7.
 Update composer.lock file to match composer.json.
-
-### Deprecated
 
 ### Removed
 Remove deprecated `$config_directories` variable.
 
 ### Fixed
 Bumps hosted-git-info from 2.8.8 to 2.8.9.
-
-### Security
 
 ## [1.2.0] - 2021-05-06
 ### Added
@@ -61,7 +68,7 @@ Removed the view_unpublished module.
 Updated for Drupal 9 support.
 
 ## [1.0.5] - 2020-08-13
-This is the last release with support for support with Drupal 8.
+This is the last release with support for Drupal 8.
 
 ### Added
 - Added yargs package
@@ -106,7 +113,8 @@ This is the last release with support for support with Drupal 8.
 ## [1.0.0] - 2018-06-01
 Initial tagged release
 
-[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.0...HEAD
+[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.1...HEAD
+[1.2.1]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/oomphinc/drupal-scaffold/compare/1.1.2...1.2.0
 [1.1.2]: https://github.com/oomphinc/drupal-scaffold/compare/1.1.1...1.1.2
 [1.1.1]: https://github.com/oomphinc/drupal-scaffold/compare/1.1.0...1.1.1
