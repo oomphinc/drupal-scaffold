@@ -2,7 +2,7 @@ name: drupal-scaffold
 recipe: drupal9
 
 config:
-  php: "7.3"
+  php: "7.4"
   webroot: web
   xdebug: false
   database: mariadb:10.3
@@ -18,19 +18,15 @@ services:
       - cd $LANDO_MOUNT && composer install
 
   nodejs:
-    type: node:10
-    globals:
-      gulp-cli: latest
+    type: node:14
     run:
       - cd $LANDO_MOUNT && npm install
-      - cd $LANDO_MOUNT && gulp build
+      - cd $LANDO_MOUNT && npm run build
 
   phpmyadmin:
     type: phpmyadmin
 
 tooling:
-  gulp:
-    service: nodejs
   node:
     service: nodejs
   npm:

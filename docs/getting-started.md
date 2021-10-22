@@ -11,7 +11,7 @@ tools to get started with a new project:
 
 * [Lando][]: Local development
 * [npm][]: NodeJS dependency management
-* [Gulp][]: SCSS & JS compilation, validation and automatic syntax fixing
+* [Webpack][]: PostCSS & JS compilation, validation and automatic syntax fixing
 * [Composer][]: PHP dependency management
 * [PHPCS][]: PHP syntax validation
 * [PHPUnit][]: PHP unit testing
@@ -103,7 +103,7 @@ After the database import has completed, [Lando][] will automatically clear the
 ## Using Lando tooling
 
 [Lando][] provides a tooling feature that wraps commands like `drush`,
-`composer`, `npm` and `gulp`, and runs them inside of a [Docker][] container.
+`composer`, and `npm`, and runs them inside of a [Docker][] container.
 This provides the mechanism of a single project dependency locally, which is
 just [Lando][].
 
@@ -121,7 +121,6 @@ Commands:
   destroy [appname]        Destroy app in current directory or [appname]
   drupal                   Run drupal console commands
   drush                    Run drush commands
-  gulp                     Run gulp commands
   info [appname]           Prints info about app in current directory or [appname]
   init [method]            Initialize a lando app, optional methods: github, pantheon
   list                     List all lando apps
@@ -150,7 +149,8 @@ You need at least one command before moving on
 [Oomph Inc's Drupal Scaffold]: https://github.com/oomphinc/drupal-scaffold.git
 [Lando]: https://docs.devwithlando.io
 [npm]: https://npmjs.com
-[Gulp]: https://gulpjs.com
+[Webpack]: https://webpack.js.org
+[PostCSS]: https://postcss.org
 [Composer]: https://getcomposer.org
 [PHPCS]: https://github.com/squizlabs/PHP_CodeSniffer
 [PHPUnit]: https://phpunit.de

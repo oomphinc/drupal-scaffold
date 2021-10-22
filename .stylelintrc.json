@@ -1,11 +1,29 @@
 {
   "extends": [
-    "stylelint-config-sass-guidelines"
+    "stylelint-config-recommended",
+    "stylelint-a11y/recommended",
+    "stylelint-config-prettier"
   ],
   "rules": {
-    "max-nesting-depth": 4,
-    "selector-no-qualifying-type": null,
-    "selector-max-compound-selectors": 4,
-    "order/properties-alphabetical-order": null
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "include",
+          "mixin",
+          "extend",
+          "if",
+          "else",
+          "each",
+          "content",
+          "import",
+          "function",
+          "return",
+          "define-mixin"
+        ]
+      }
+    ],
+    "no-descending-specificity": null,
+    "a11y/media-prefers-reduced-motion": null
   }
 }

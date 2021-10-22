@@ -82,5 +82,5 @@ Libraries managed with NPM are only used for local development. After updates
 have finished installing, test the following commands:
 
 ```bash
-$ lando gulp build && lando gulp fix && lando gulp watch
+$ lando npm run cleanup && lando npm run dev
 ```
