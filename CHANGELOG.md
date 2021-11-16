@@ -12,7 +12,6 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
-Changed admin_toolbar to use next major release: ^3
 
 ### Deprecated
 
@@ -21,6 +20,10 @@ Changed admin_toolbar to use next major release: ^3
 ### Fixed
 
 ### Security
+
+## [1.2.2] - 2021-11-16
+### Changed
+Changed admin_toolbar to use next major release: ^3
 
 ## [1.2.1] - 2021-10-22
 ### Changed
@@ -114,7 +117,8 @@ This is the last release with support for Drupal 8.
 ## [1.0.0] - 2018-06-01
 Initial tagged release
 
-[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.1...HEAD
+[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.2...HEAD
+[1.2.2]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.1...1.2.2
 [1.2.1]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/oomphinc/drupal-scaffold/compare/1.1.2...1.2.0
 [1.1.2]: https://github.com/oomphinc/drupal-scaffold/compare/1.1.1...1.1.2
