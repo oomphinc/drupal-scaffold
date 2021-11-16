@@ -12,6 +12,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
+Changed admin_toolbar to use next major release: ^3
 
 ### Deprecated
 
