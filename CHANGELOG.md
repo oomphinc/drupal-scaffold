@@ -12,6 +12,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
+Update PHP version from 7.3 to 7.4
 
 ### Deprecated
 
