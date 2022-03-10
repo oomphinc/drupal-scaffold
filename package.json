@@ -17,14 +17,14 @@
   "scripts": {
     "dev": "webpack --watch --config ./webpack/webpack.dev.js",
     "build": "webpack --config ./webpack/webpack.prod.js",
-    "lint": "eslint --config=.eslintrc.json --no-eslintrc --no-error-on-unmatched-pattern \"./docroot/*/custom/**/*.es6.js\" && stylelint \"./docroot/*/custom/**/*.pcss\"",
+    "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint --config=.eslintrc.json --no-eslintrc --no-error-on-unmatched-pattern \"./docroot/*/custom/**/*.es6.js\"",
     "lint:css": "stylelint \"./docroot/*/custom/**/*.pcss\"",
-    "fix": "eslint --config=.eslintrc.json --no-eslintrc --no-error-on-unmatched-pattern \"./docroot/*/custom/**/*.es6.js\" --fix && stylelint \"./docroot/*/custom/**/*.pcss\" --fix",
+    "fix": "npm run fix:js && npm run fix:css",
     "fix:js": "eslint --config=.eslintrc.json --no-eslintrc --no-error-on-unmatched-pattern \"./docroot/*/custom/**/*.es6.js\" --fix",
     "fix:css": "stylelint \"./docroot/*/custom/**/*.pcss\" --fix",
-    "format": "prettier --write \"./docroot/*/custom/**/*.{js,pcss}\"",
-    "polish": "prettier --write \"./docroot/*/custom/**/*.{js,pcss}\" && eslint --config=.eslintrc.json --no-eslintrc --no-error-on-unmatched-pattern \"./docroot/*/custom/**/*.es6.js\" && stylelint \"./docroot/*/custom/**/*.pcss\""
+    "format": "prettier --write \"./docroot/*/custom/**/*.{es6.js,pcss}\"",
+    "polish": "npm run format && npm run lint"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.2",
