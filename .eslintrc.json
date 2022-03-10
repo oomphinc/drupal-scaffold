@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "eslint-config-unobtrusive",
+    "eslint-config-prettier"
+  ],
+  "root": true,
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "globals": {
+    "Drupal": true,
+    "drupalSettings": true,
+    "drupalTranslations": true,
+    "jQuery": true,
+    "once": true,
+  },
+  "settings": {
+    "react": {
+      "version": "latest"
+    }
+  }
+}

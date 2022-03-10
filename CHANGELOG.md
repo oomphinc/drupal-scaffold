@@ -10,6 +10,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ## [Unreleased]
 ### Added
+PostCSS and Webpack
 
 ### Changed
 Update PHP version from 7.3 to 7.4
@@ -17,6 +18,7 @@ Update PHP version from 7.3 to 7.4
 ### Deprecated
 
 ### Removed
+SCSS and Gulp
 
 ### Fixed
 
