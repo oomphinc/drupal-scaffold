@@ -10,19 +10,26 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ## [Unreleased]
 ### Added
+
+### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+
+## [2.0.0] - 2021-03-10
+### Added
 PostCSS and Webpack
 
 ### Changed
 Update PHP version from 7.3 to 7.4
 
-### Deprecated
-
 ### Removed
 SCSS and Gulp
-
-### Fixed
-
-### Security
 
 ## [1.2.2] - 2021-11-16
 ### Changed
@@ -120,7 +127,8 @@ This is the last release with support for Drupal 8.
 ## [1.0.0] - 2018-06-01
 Initial tagged release
 
-[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.2...HEAD
+[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/2.0.0...HEAD
+[2.0.0]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.2...2.0.0
 [1.2.2]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.1...1.2.2
 [1.2.1]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.0...1.2.1
 [1.2.0]: https://github.com/oomphinc/drupal-scaffold/compare/1.1.2...1.2.0
