@@ -39,6 +39,23 @@ $ lando composer
 $ lando npm
 ```
 
+### PHPCS
+PHPCS is configured to follow Oomph's best practices, which include
+strict type checking on all php files, adding type hints to all methods,
+adding type hints to all parameters.
+
+```bash
+$ lando phpcs
+```
+
+### PHPStan
+PHPStan has been included to also scan for strict type checking as well as
+any deprecations with Drupal.
+
+```bash
+& lando phpstan
+```
+
 [Lando]: https://docs.devwithlando.io
 [Composer]: https://getcomposer.org
 [npm]: https://www.npmjs.com
