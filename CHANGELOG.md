@@ -12,6 +12,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
+Bumps nanoid from 3.1.30 to 3.3.1.
 
 ### Deprecated
 
