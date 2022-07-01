@@ -10,10 +10,12 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ## [Unreleased]
 ### Added
+- #76: Added PHPStan analysis to the initial scaffold.
 
 ### Changed
 Bumps nanoid from 3.1.30 to 3.3.1.
 Bumps minimist from 1.2.5 to 1.2.6.
+- #76: Updated the PHPCS to be more strict and to follow Oomph best practices.
 
 ### Deprecated
 

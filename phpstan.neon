@@ -1,0 +1,15 @@
+parameters:
+  level: 6
+  ignoreErrors:
+    - '#Construct empty\(\) is not allowed. Use more strict comparison.#'
+    - '#Method [a-zA-Z0-9\\_]+::[a-zA-Z0-9\\_]+\(\) return type has no value type specified in iterable type array.#'
+  reportUnmatchedIgnoredErrors: false
+  paths:
+    - web/modules/custom/
+    - web/themes/custom
+    - web/profiles/custom
+  excludePaths:
+    - web/modules/custom/*/tests/**
+    - web/themes/custom/*/tests/**
+    - web/profiles/custom/*/tests/**
+    - tests/**

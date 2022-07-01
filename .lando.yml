@@ -37,6 +37,9 @@ tooling:
   phpcs:
     service: appserver
     cmd: vendor/bin/phpcs
+  phpstan:
+    service: appserver
+    cmd: vendor/bin/phpstan
   security-check:
     service: appserver
     cmd: "php vendor/sensiolabs/security-checker/security-checker security:check composer.lock"
