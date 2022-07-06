@@ -21,7 +21,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ### Security
 
-## [2.1.0]
+## [2.1.0] - 2022-07-06
 ### Added
 - #76: Added PHPStan analysis to the initial scaffold.
 
