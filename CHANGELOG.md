@@ -10,12 +10,8 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ## [Unreleased]
 ### Added
-- #76: Added PHPStan analysis to the initial scaffold.
 
 ### Changed
-Bumps nanoid from 3.1.30 to 3.3.1.
-Bumps minimist from 1.2.5 to 1.2.6.
-- #76: Updated the PHPCS to be more strict and to follow Oomph best practices.
 
 ### Deprecated
 
@@ -25,68 +21,77 @@ Bumps minimist from 1.2.5 to 1.2.6.
 
 ### Security
 
-## [2.0.0] - 2021-03-10
+## [2.1.0]
 ### Added
-PostCSS and Webpack
+- #76: Added PHPStan analysis to the initial scaffold.
 
 ### Changed
-Update PHP version from 7.3 to 7.4
+- Bumps nanoid from 3.1.30 to 3.3.1.
+- Bumps minimist from 1.2.5 to 1.2.6.
+- #76: Updated the PHPCS to be more strict and to follow Oomph best practices.
+
+## [2.0.0] - 2021-03-10
+### Added
+- PostCSS and Webpack
+
+### Changed
+- Update PHP version from 7.3 to 7.4
 
 ### Removed
-SCSS and Gulp
+- SCSS and Gulp
 
 ## [1.2.2] - 2021-11-16
 ### Changed
-Changed admin_toolbar to use next major release: ^3
+- Changed admin_toolbar to use next major release: ^3
 
 ## [1.2.1] - 2021-10-22
 ### Changed
-Bumps lodash from 4.17.20 to 4.17.21.
-Bump path-parse from 1.0.6 to 1.0.7.
-Update composer.lock file to match composer.json.
+- Bumps lodash from 4.17.20 to 4.17.21.
+- Bump path-parse from 1.0.6 to 1.0.7.
+- Update composer.lock file to match composer.json.
 
 ### Removed
-Remove deprecated `$config_directories` variable.
+- Remove deprecated `$config_directories` variable.
 
 ### Fixed
-Bumps hosted-git-info from 2.8.8 to 2.8.9.
+- Bumps hosted-git-info from 2.8.8 to 2.8.9.
 
 ## [1.2.0] - 2021-05-06
 ### Added
-Add .rsync-filter files to /vendor/ and /web/ to ignore .git dirs.
+- Add .rsync-filter files to /vendor/ and /web/ to ignore .git dirs.
 
 ### Fixed
-Require Composer2-compatible versions of project dependencies.
-Bump y18n from 4.0.0 to 4.0.1.
-Bump ini from 1.3.5 to 1.3.8.
+- Require Composer2-compatible versions of project dependencies.
+- Bump y18n from 4.0.0 to 4.0.1.
+- Bump ini from 1.3.5 to 1.3.8.
 
 ## [1.1.2] - 2020-12-21
 ### Added
-Added lando xdebug-on tooling to enable Xdebug.
-Added lando xdebug-off tooling to disable Xdebug.
+- Added lando xdebug-on tooling to enable Xdebug.
+- Added lando xdebug-off tooling to disable Xdebug.
 
 ### Changed
-Updated memcache config in settings.php.
+- Updated memcache config in settings.php.
 
 ### Fixed
-Reintroduced Sensio Labs Security Checker.
+- Reintroduced Sensio Labs Security Checker.
 
 ### Security
-Updated lodash to 4.17.20.
-Updated lodash.template to 4.5.0.
+- Updated lodash to 4.17.20.
+- Updated lodash.template to 4.5.0.
 
 ## [1.1.1] - 2020-09-02
 ### Removed
-Removed the coffee module.
-Removed the honeypot module.
-Removed the view_unpublished module.
+- Removed the coffee module.
+- Removed the honeypot module.
+- Removed the view_unpublished module.
 
 ## [1.1.0] - 2020-08-13
 ### Changed
-Updated for Drupal 9 support.
+- Updated for Drupal 9 support.
 
 ## [1.0.5] - 2020-08-13
-This is the last release with support for Drupal 8.
+- This is the last release with support for Drupal 8.
 
 ### Added
 - Added yargs package
@@ -129,9 +134,10 @@ This is the last release with support for Drupal 8.
 - Fix PHPUnit version due to BC issues in `7.x`
 
 ## [1.0.0] - 2018-06-01
-Initial tagged release
+- Initial tagged release
 
-[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/2.0.0...HEAD
+[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/2.1.0...HEAD
+[2.1.0]: https://github.com/oomphinc/drupal-scaffold/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.2...2.0.0
 [1.2.2]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.1...1.2.2
 [1.2.1]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.0...1.2.1
