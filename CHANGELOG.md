@@ -20,6 +20,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Fixed
 
 ### Security
+- Bumps terser from 4.8.0 to 4.8.1.
 
 ## [2.1.0] - 2022-07-06
 ### Added
