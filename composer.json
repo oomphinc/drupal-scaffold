@@ -38,8 +38,7 @@
         "drupal/devel": "^4.0",
         "drupal/seckit": "^2.0",
         "drush/drush": "^10.0",
-        "oomphinc/composer-installers-extender": "^1.1 || ^2",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "oomphinc/composer-installers-extender": "^1.1 || ^2"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -52,7 +51,6 @@
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
             "composer/installers": true,
-            "zaporylie/composer-drupal-optimizations": true,
             "oomphinc/composer-installers-extender": true
         }
     },
