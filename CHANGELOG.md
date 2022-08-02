@@ -16,6 +16,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Deprecated
 
 ### Removed
+- Remove zaporylie/composer-drupal-optimizations - not needed with compser 2.
 
 ### Fixed
 
