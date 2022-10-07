@@ -61,22 +61,8 @@ through the web browser, or you can install [Drupal][] using
 `lando drush site-install`. Check out the [Drush][] documentation for further
 information.
 
-However, if you're trying to get Drupal installed with a project that is already
-setup here's what you can do:
-
-### Install Drupal with the `config_installer` profile
-
-Included with this scaffold is a `drupal/config_installer`. This is a
-contributed [Drupal][] installation profile that installs [Drupal][] based on
-existing configuration exported from another installation of [Drupal][].
-Configuration for this project is located in `/config` from the project root.
-
-You can install [Drupal][] with the `config_installer` profile using the
-[Drupal][] installation UI by visiting the site in your web browser or you can
-install the site using [Drush][]:
-
 ```bash
-$ lando drush site-install config_installer --account-pass=[ADMIN_PASSWORD]
+$ lando drush site-install --account-pass=[ADMIN_PASSWORD]
 ```
 
 You'll want to replace `[ADMIN_PASSWORD]` with the desired password for the
