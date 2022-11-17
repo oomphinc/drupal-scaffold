@@ -12,6 +12,8 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
+- Updates file-type from 14.7.1 to 18.0.0.
+- Updates open-cli from 6.0.1 to 7.1.0.
 
 ### Deprecated
 
