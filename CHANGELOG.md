@@ -16,9 +16,10 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Deprecated
 
 ### Removed
-- Remove zaporylie/composer-drupal-optimizations - not needed with compser 2.
+- Remove zaporylie/composer-drupal-optimizations - not needed with composer 2.
 
 ### Fixed
+- Bump loader-utils from 1.4.0 to 1.4.2.
 
 ### Security
 - Bumps terser from 4.8.0 to 4.8.1.
