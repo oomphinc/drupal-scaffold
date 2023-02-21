@@ -2,7 +2,7 @@ name: drupal-scaffold
 recipe: drupal9
 
 config:
-  php: "7.4"
+  php: "8.1"
   webroot: web
   xdebug: false
   database: mariadb:10.3
