@@ -18,6 +18,14 @@ When prompted for database name, username, and password, enter `drupal9` for all
 When prompted for host, use the `hostnames` value as reported when running:
 `lando info --service=database` (e.g. `database.drupalscaffold.internal`)
 
+### Update .gitignore
+Once composer install runs, remove the composer.lock ignore rule so your project
+dependencies are tracked.
+```text
+# Remove this ignore rule for composer.lock after initial install.
+composer.lock
+```
+
 Site install command:
 ```bash
 $ lando drush site-install standard --account-pass=admin
