@@ -1,3 +1,6 @@
+# Remove this ignore rule for composer.lock after initial install.
+composer.lock
+
 # Drupal
 /web/*.*
 /web/core
@@ -35,3 +38,4 @@
 /drupal8.*.gz
 /.lando.local.yml
 /.gitattributes
+.env
