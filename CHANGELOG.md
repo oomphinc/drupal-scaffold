@@ -20,6 +20,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 
 ### Removed
 - Remove zaporylie/composer-drupal-optimizations - not needed with composer 2.
+- Removed composer.lock from tracking and updated getting started docs.
 
 ### Fixed
 - Bump loader-utils from 1.4.0 to 1.4.2.
