@@ -16,6 +16,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 - Updates open-cli from 6.0.1 to 7.1.0.
 - Updates PHP to 8.1 (lando).
 - Bumps minimatch from 3.0.4 to 3.1.2.
+- Bumps decode-uri-component from 0.2.0 to 0.2.2.
 
 ### Deprecated
 
