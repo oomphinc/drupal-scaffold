@@ -17,6 +17,9 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 - Updates PHP to 8.1 (lando).
 - Bumps minimatch from 3.0.4 to 3.1.2.
 - Bumps decode-uri-component from 0.2.0 to 0.2.2.
+- Bumps json5 from 1.0.1 to 1.0.2.
+- Updates glob-parent from 3.1.0 to 5.1.2.
+- Updates webpack from 4.44.2 to 5.75.0.
 
 ### Deprecated
 
