@@ -7,6 +7,10 @@ Drupal 9 scaffold project to kick start development of a new instance of Drupal.
 The only dependency this project has is [Lando][]. All tools used for this
 project are containerized and wrapped with [Lando][].
 
+For those using [DDEV], a DDEV config file is included, however some of the
+tooling defined for Lando may not be available or will require using DDEV
+specific commands.
+
 ## Getting started
 
 Place a copy of this repository in a new folder. In .lando.yml,
@@ -56,14 +60,33 @@ adding type hints to all parameters.
 $ lando phpcs
 ```
 
+```bash
+$ ddev exec phpcs
+```
+
 ### PHPStan
 PHPStan has been included to also scan for strict type checking as well as
 any deprecations with Drupal.
 
 ```bash
-& lando phpstan
+$ lando phpstan
+```
+
+```bash
+$ ddev exec phpstan
+```
+
+### PHPUnit
+
+```bash
+$ lando phpunit
+```
+
+```bash
+$ ddev exec phpunit
 ```
 
 [Lando]: https://docs.devwithlando.io
 [Composer]: https://getcomposer.org
 [npm]: https://www.npmjs.com
+[DDEV]: https://ddev.readthedocs.io/en/stable
