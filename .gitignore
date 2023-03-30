@@ -38,5 +38,4 @@ composer.lock
 # Lando
 /drupal8.*.gz
 /.lando.local.yml
-/.gitattributes
 .env
