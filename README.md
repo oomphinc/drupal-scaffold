@@ -1,6 +1,6 @@
 # Drupal Scaffold
 
-Drupal 9 scaffold project to kick start development of a new instance of Drupal.
+Drupal scaffold project to kick-start development of a new instance of Drupal.
 
 ## Dependencies
 
@@ -8,6 +8,19 @@ The only dependency this project has is [Lando][]. All tools used for this
 project are containerized and wrapped with [Lando][].
 
 ## Getting started
+
+
+### Using Composer create-project
+
+```bash
+composer create-project oomphinc/drupal-scaffold my-project-name
+```
+
+### Using git clone
+
+```bash
+git clone oomphinc/drupal-scaffold.git
+```
 
 Place a copy of this repository in a new folder. In .lando.yml,
 change the name of the project. Then run `lando start`. This will
@@ -18,13 +31,6 @@ When prompted for database name, username, and password, enter `drupal9` for all
 When prompted for host, use the `hostnames` value as reported when running:
 `lando info --service=database` (e.g. `database.drupalscaffold.internal`)
 
-### Update .gitignore
-Once composer install runs, remove the composer.lock ignore rule so your project
-dependencies are tracked.
-```text
-# Remove this ignore rule for composer.lock after initial install.
-composer.lock
-```
 
 Site install command:
 ```bash
