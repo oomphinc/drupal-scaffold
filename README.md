@@ -19,7 +19,7 @@ composer create-project oomphinc/drupal-scaffold my-project-name
 ### Using git clone
 
 ```bash
-git clone oomphinc/drupal-scaffold.git
+git clone git@github.com:oomphinc/drupal-scaffold.git
 ```
 
 Place a copy of this repository in a new folder. In .lando.yml,
