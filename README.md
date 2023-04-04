@@ -17,7 +17,7 @@ specific commands.
 ### Using Composer create-project
 
 ```bash
-composer create-project oomphinc/drupal-scaffold my-project-name
+composer create-project oomphinc/drupal-scaffold my-project-name --ignore-platform-reqs
 ```
 
 ### Using git clone
