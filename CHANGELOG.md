@@ -12,6 +12,8 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
+- Updates postcss-loader from 4.3.0 to 7.2.4.
+- Updates stylelint from 14.0.0 to 15.6.0.
 
 ### Deprecated
 
