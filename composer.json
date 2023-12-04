@@ -86,6 +86,7 @@
         }
     },
     "require-dev": {
+        "behat/mink": "^1.8",
         "jangregor/phpstan-prophecy": "^1.0",
         "mglaman/phpstan-drupal": "^1.1",
         "phpstan/extension-installer": "^1.1",
