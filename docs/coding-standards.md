@@ -25,7 +25,7 @@ The validator for custom JavaScript is [ESLint][]. This project uses the
 file provided by [Drupal][] core follows the
 [Drupal coding standards for JavaScript][].
 
-To validate JavaScript files use `lando gulp validate:js`.
+To validate JavaScript files use `npm run lint`.
 
 ## PHP
 
@@ -33,14 +33,14 @@ The validator for custom PHP is [PHPCS][]. This project uses the `drupal/coder`
 package to validate custom PHP files against the
 [Drupal coding standards for PHP][].
 
-To validate PHP files use `lando phpcs`.
+To validate PHP files use `ddev phpcs`.
 
 ## SASS
 
 The validator for custom SASS is [stylelint][]. This project uses the
 [SASS Guidelines][] with _some_ modifications:
 
-To validate SASS files use `lando gulp validate:sass`.
+To validate SASS files use `npm run lint`.
 
 * There is a max nesting limit (max-nesting-depth) of 4
 * Qualifying a selector by type is allowed (selector-no-qualifying-type)

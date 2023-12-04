@@ -14,7 +14,7 @@
     "drupalSettings": true,
     "drupalTranslations": true,
     "jQuery": true,
-    "once": true,
+    "once": true
   },
   "settings": {
     "react": {
