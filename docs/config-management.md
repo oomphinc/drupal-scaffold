@@ -10,7 +10,7 @@ tags:
 # Configuration Management
 
 This project uses the core Configuration Management utilities included with
-Drupal 8 in conjunction with the [`config_split`][] module to provide
+Drupal in conjunction with the [`config_split`][] module to provide
 environment specific configuration.
 
 Configuration files are located in the `/config` directory. The `/config/common`
@@ -52,10 +52,10 @@ active configuration (`prod`, `uat`, `dev`). Next, you **MUST** rebuild the
 Drupal cache, e.g.
 
 ```bash
-lando drush cache-rebuild
+ddev  drush cache-rebuild
 ```
 
-Now you can run `lando drush config-import` to import the environments
+Now you can run `ddev  drush config-import` to import the environments
 configuration into Drupal. This will overwrite any configuration changes you
 currently have unsaved.
 
@@ -64,7 +64,7 @@ currently have unsaved.
 Configuration is exported using the `config-export` Drush command, e.g.
 
 ```bash
-lando drush config-export
+ddev drush config-export
 ```
 
 This will export any active configuration to the file system in the `config`
@@ -77,7 +77,7 @@ common directory.
 Configuration is imported using the `config-import` Drush command, e.g.
 
 ```bash
-lando drush config-import
+ddev drush config-import
 ```
 
 This will import all of the common configuration, and then import any

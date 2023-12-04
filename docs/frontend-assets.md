@@ -13,12 +13,12 @@ tags:
 This project uses [Webpack][] for frontend tooling. The webpack setup ncluded with
 this project has the following commands:
 
-* `lando npm run dev`
-* `lando npm run build`
-* `lando npm run polish`
-* `lando npm run lint[:js:css]`
-* `lando npm run fix[:js:css]`
-* `lando npm run format`
+* `ddev npm run dev`
+* `ddev npm run build`
+* `ddev npm run polish`
+* `ddev npm run lint[:js:css]`
+* `ddev npm run fix[:js:css]`
+* `ddev npm run format`
 
 ## Build and Dev Commands
 

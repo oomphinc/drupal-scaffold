@@ -9,7 +9,6 @@ project are containerized and wrapped with [DDEV][].
 
 ## Getting started
 
-
 ### Using Composer create-project
 
 ```bash
@@ -34,14 +33,6 @@ $ ddev drush site-install standard --account-pass=admin
 
 The command above will  install Drupal with the standard installation profile.
 You can then log into Drupal as User 1 with `admin` / `admin` as the credentials.
-
-```bash
-$ ddev composer
-```
-
-```bash
-$ ddev npm
-```
 
 ### PHPCS
 PHPCS is configured to follow Oomph's best practices, which include
