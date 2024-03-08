@@ -70,12 +70,11 @@
         ]
     },
     "extra": {
-        "installer-types": ["bower-asset", "npm-asset"],
+        "installer-types": ["npm-asset"],
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": [
                 "type:drupal-library",
-                "type:bower-asset",
                 "type:npm-asset"
             ],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
