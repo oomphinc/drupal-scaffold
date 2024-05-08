@@ -23,7 +23,6 @@
     "require": {
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
-        "drupal-composer/preserve-paths": "^0.1.4",
         "drupal/admin_toolbar": "^3.3.0",
         "drupal/coder": "^8.3",
         "drupal/config_split": "^1.5",
@@ -42,7 +41,6 @@
         "sort-packages": true,
         "allow-plugins": {
             "cweagans/composer-patches": true,
-            "drupal-composer/preserve-paths": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "drupal/core-vendor-hardening": true,
@@ -83,7 +81,6 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {},
-        "preserve-paths": [],
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web"
