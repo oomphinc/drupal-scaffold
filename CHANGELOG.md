@@ -18,6 +18,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Deprecated
 
 ### Removed
+- #123: drupal-composer/preserve-paths plugin.
 
 ### Fixed
 
