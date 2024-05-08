@@ -12,15 +12,23 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
-- Updates postcss-loader from 4.3.0 to 7.2.4.
-- Updates stylelint from 14.0.0 to 15.6.0.
 
 ### Deprecated
 
 ### Removed
-- #123: drupal-composer/preserve-paths plugin.
 
 ### Fixed
+
+### Security
+
+
+## [2.3.0] - 2024-05-08
+### Changed
+- Updates postcss-loader from 4.3.0 to 7.2.4.
+- Updates stylelint from 14.0.0 to 15.6.0.
+
+### Removed
+- #123: drupal-composer/preserve-paths plugin.
 
 ### Security
 - Bumps semver from 5.7.1 to 5.7.2.
@@ -167,7 +175,9 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ## [1.0.0] - 2018-06-01
 - Initial tagged release
 
-[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/2.1.0...HEAD
+[Unreleased]: https://github.com/oomphinc/drupal-scaffold/compare/2.3.0...HEAD
+[2.3.0]: https://github.com/oomphinc/drupal-scaffold/compare/2.2.0...2.3.0
+[2.2.0]: https://github.com/oomphinc/drupal-scaffold/compare/2.1.0...2.2.0
 [2.1.0]: https://github.com/oomphinc/drupal-scaffold/compare/2.0.0...2.1.0
 [2.0.0]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.2...2.0.0
 [1.2.2]: https://github.com/oomphinc/drupal-scaffold/compare/1.2.1...1.2.2
