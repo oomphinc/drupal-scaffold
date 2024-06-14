@@ -10,7 +10,7 @@ tags:
 PHPUnit tests in the project are run in your terminal:
 
 ```bash
-$ lando phpunit
+$ ddev exec phpunit
 ```
 
 ## Test Locations
