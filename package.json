@@ -1,7 +1,7 @@
 {
   "name": "drupal-scaffold",
   "version": "1.0.0",
-  "description": "A Drupal 9 scaffold project, with Webpack",
+  "description": "A Drupal scaffold project with Webpack",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oomphinc/drupal-scaffold.git"
@@ -11,12 +11,12 @@
     "dev": "webpack --watch --config ./webpack/webpack.dev.js",
     "build": "webpack --config ./webpack/webpack.prod.js",
     "lint": "npm run lint:js && npm run lint:css",
-    "lint:js": "eslint --config=.eslintrc.json --no-eslintrc --no-error-on-unmatched-pattern \"./docroot/*/custom/**/*.es6.js\"",
-    "lint:css": "stylelint \"./docroot/*/custom/**/*.pcss\"",
+    "lint:js": "npx @biomejs/biome lint ./web/themes/custom/**/assets/js/*.es6.js",
+    "lint:css": "stylelint \"./web/*/custom/**/*.pcss\"",
     "fix": "npm run fix:js && npm run fix:css",
-    "fix:js": "eslint --config=.eslintrc.json --no-eslintrc --no-error-on-unmatched-pattern \"./docroot/*/custom/**/*.es6.js\" --fix",
-    "fix:css": "stylelint \"./docroot/*/custom/**/*.pcss\" --fix",
-    "format": "prettier --write \"./docroot/*/custom/**/*.{es6.js,pcss}\"",
+    "fix:js": "npx @biomejs/biome lint --write ./web/themes/custom/**/assets/js/*.es6.js",
+    "fix:css": "stylelint \"./web/*/custom/**/*.pcss\" --fix",
+    "format": "npx @biomejs/biome format --write ./web/themes/custom/**/assets/js/*.es6.js",
     "polish": "npm run format && npm run lint"
   },
   "devDependencies": {
