@@ -12,6 +12,7 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Added
 
 ### Changed
+- Use `biome` in place of `eslint` and `prettier`
 
 ### Deprecated
 
@@ -20,6 +21,8 @@ modified Semantic Versioning scheme. See the "Versioning scheme" section of the
 ### Fixed
 
 ### Security
+- Update all npm packages
+- Update drupal core and all modules
 
 
 ## [2.3.0] - 2024-05-08
