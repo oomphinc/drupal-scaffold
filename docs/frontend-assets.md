@@ -13,12 +13,12 @@ tags:
 This project uses [Webpack][] for frontend tooling. The webpack setup ncluded with
 this project has the following commands:
 
-* `lando npm run dev`
-* `lando npm run build`
-* `lando npm run polish`
-* `lando npm run lint[:js:css]`
-* `lando npm run fix[:js:css]`
-* `lando npm run format`
+* `ddev npm run dev`
+* `ddev npm run build`
+* `ddev npm run polish`
+* `ddev npm run lint[:js:css]`
+* `ddev npm run fix[:js:css]`
+* `ddev npm run format`
 
 ## Build and Dev Commands
 
@@ -70,17 +70,15 @@ Compiles to:
 
 ## Polish command
 
-The `polish` command runs a series of commands against the front end assets. Including:
-* `prettier`: to automatically format code through the Prettier plugin.
-* `eslint --fix`: runs through linting with ESlint and fixes any errors it can before erroring out.
-* `stylelint --fix`: runs through linting with Stylelint and fixes any errors it can before erroring out.
+The `polish` command runs a series of commands against the front end assets to
+automatically format code and fix any errors it can before erroring out.
 
 It is recommended to run the `polish` command regularly during development as the
-builds in Github Actions will fail if there are any coding standards violation. Cleanup
+builds in Github Actions will fail if there are any coding standards violations. Cleanup
 runs on both the `.es6.js` and `.pcss` files.
 
 ## Lint command
-The `lint[:js:scss]` command runs the syntax checkers provided by the code linters used for
+The `lint[:js:css]` command runs the syntax checkers provided by the code linters used for
 validating PostCSS and JavaScript (ES6). The command will only find errors, not try to fix them.
 
 ## Fix command
