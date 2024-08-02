@@ -93,7 +93,7 @@ $ ddev exec phpunit
 ```
 
 ### Biome
-[Biome][] has been included for linting and formatting JS files.
+[Biome][] has been included for linting and formatting JS files. To avoid the tool possibly being too noisy, it is up to the developer to run these checks manually. If you prefer to automate the process, check [Biome's Git Hooks documentation][].
 
 > [!NOTE]
 > Refer to the "scripts" key in the package.json file for a full list of commands.
@@ -109,8 +109,15 @@ $ ddev npm run lint:js
 > [!IMPORTANT]
 > These scripts make some assumptions about what your project paths will look like (web vs. docroot etc.). You may need to adjust the paths in these scripts for them to work correctly.
 
+If you have a reason to run the Biome commands directly, use the following:
+
+```bash
+$ ddev exec npx @biomejs/biome lint <files>
+```
+
 [Lando]: https://docs.devwithlando.io
 [Composer]: https://getcomposer.org
 [npm]: https://www.npmjs.com
 [DDEV]: https://ddev.readthedocs.io/en/stable
 [Biome]: https://biomejs.dev/guides/getting-started
+[Biome's Git Hooks documentation]: https://biomejs.dev/recipes/git-hooks/
