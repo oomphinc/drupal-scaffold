@@ -92,7 +92,25 @@ $ lando phpunit
 $ ddev exec phpunit
 ```
 
+### Biome
+[Biome][] has been included for linting and formatting JS files.
+
+> [!NOTE]
+> Refer to the "scripts" key in the package.json file for a full list of commands.
+
+```bash
+$ lando npm run lint:js
+```
+
+```bash
+$ ddev npm run lint:js
+```
+
+> [!IMPORTANT]
+> These scripts make some assumptions about what your project paths will look like (web vs. docroot etc.). You may need to adjust the paths in these scripts for them to work correctly.
+
 [Lando]: https://docs.devwithlando.io
 [Composer]: https://getcomposer.org
 [npm]: https://www.npmjs.com
 [DDEV]: https://ddev.readthedocs.io/en/stable
+[Biome]: https://biomejs.dev/guides/getting-started
