@@ -10,14 +10,12 @@
   "scripts": {
     "dev": "webpack --watch --config ./webpack/webpack.dev.js",
     "build": "webpack --config ./webpack/webpack.prod.js",
-    "lint": "npm run lint:js && npm run lint:css",
     "lint:js": "npx @biomejs/biome lint ./web/themes/custom/**/assets/js/*.es6.js",
     "lint:css": "stylelint \"./web/themes/custom/**/assets/css/*.pcss\"",
-    "fix": "npm run fix:js && npm run fix:css",
-    "fix:js": "npx @biomejs/biome lint --write ./web/themes/custom/**/assets/js/*.es6.js",
+    "lint": "npm run lint:js && npm run lint:css",
+    "fix:js": "npx @biomejs/biome check --write ./web/themes/custom/**/assets/js/*.es6.js",
     "fix:css": "stylelint \"./web/themes/custom/**/assets/css/*.pcss\" --fix",
-    "format": "npx @biomejs/biome format --write ./web/themes/custom/**/assets/js/*.es6.js",
-    "polish": "npm run format && npm run lint"
+    "fix": "npm run fix:js && npm run fix:css"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
