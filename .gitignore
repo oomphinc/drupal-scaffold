@@ -30,6 +30,7 @@ composer.lock
 /node_modules
 /vendor/*
 !/vendor/.rsync-filter
+package-lock.json
 
 # Project test results
 /tests/**/results
