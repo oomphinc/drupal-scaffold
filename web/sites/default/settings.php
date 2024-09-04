@@ -773,6 +773,13 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 
+/**
+ * State cache flag $settings['state_cache'] is not set. It is recommended to be
+ * set to TRUE unless there are too many state keys. Drupal 11 will
+ * default to having state cache enabled.
+ */
+$settings['state_cache'] = TRUE;
+
 // Lando environment settings
 if (getenv('LANDO_INFO')) {
   $lando_info = json_decode(getenv('LANDO_INFO'), TRUE);
